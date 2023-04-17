@@ -26,6 +26,25 @@ export class StartPanel extends LitElement {
       font-size: 14px;
       cursor: pointer;
     }
+    .card::part(base) {
+      background-color: #4158d0;
+      background-image: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+      );
+    }
+    .card::part(body) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .card [slot='header'] {
+      display: flex;
+      align-items: center;
+      /* color: red; */
+      justify-content: space-between;
+    }
   `;
 
   render() {
